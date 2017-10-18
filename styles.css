@@ -1,0 +1,159 @@
+/*.outer-container {
+  background-image: url("header.png");
+  background-repeat: no-repeat;
+  width: 100%;
+}*/
+
+body {
+  font-family: Avenir, sans-serif;
+}
+
+h2 {
+	font-size: 17px;
+	font-weight: 900;
+	color: #333333;
+}
+
+h3 {
+	font-size: 17px;
+	font-weight: 900;
+	color: #333333;
+}
+
+h4 {
+	font-size: 14px;
+	font-weight: 900;
+	color: #1c1f24;
+
+}
+
+#bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+}
+
+.inner-container {
+  width: 70%;
+	height: 820px;
+	background-color: #ffffff;
+	box-shadow: 0 1px 2px 0 #a9b1be;
+	border: solid 1px #cbcfd7;
+  z-index: 1;
+  margin: 7.2% 0 0 4.6%;
+}
+
+img {
+  border: 0;
+}
+
+
+#first, #second, #third {
+  display: block;
+  background-color: #fff;
+  position: relative;
+  margin: 1em .25em 1.5em .25em;
+}
+
+#first {
+  border-top: 1px solid #cbcfd7;
+}
+
+.expanded {
+  height: 300%;
+  width: 106%;
+  left: -40px;
+  border: 1px solid #e0e3e8;
+  padding: .5em .5em 2.5em 1em;
+  box-shadow: 0 -1px 8px 0 rgba(115, 114, 114, 0.39);
+  border-radius: 4px;
+  margin-bottom: 0em !important;
+  transition: width 1.5s, left 1.5s, padding .1s ease-in-out;
+}
+
+.contracted {
+  height: 100%;
+  width: 500px;
+  left: 0px;
+  border: none;
+  padding: 0em .25em 1.5em .25em;
+  box-Shadow: none;
+}
+
+.content {
+  margin: .8em;
+}
+
+.left {
+  float: left;
+  margin: 0px 20px 20px 0px;
+}
+
+.right {
+  float: left;
+  margin-bottom: 20px;
+}
+
+form {
+  background-color: #fff;
+}
+
+form > div {
+  position: relative;
+  overflow: hidden;
+}
+
+form input[type=text] {
+  padding: 2px;
+  margin-top: 3px;
+  width: 183px;
+  border: none;
+  border-bottom: 1px solid #a9b1be;
+  display: block;
+  font-size: 14px;
+  position: relative;
+	color: #333333;
+}
+
+form input[type=text]::-webkit-input-placeholder {
+  font-size: 14px;
+	text-align: left;
+	color: #a9b1be;
+}
+
+textarea:focus, input:focus{
+  outline: none;
+  border-bottom: solid 2px #2199d8;
+}
+
+form label {
+  transition: background 0.2s, color 0.2s, top 0.2s, bottom 0.2s, right 0.2s, left 0.2s;
+  font-size: 10px;
+	text-align: left;
+	color: #333333;
+  display: block;
+  position: absolute;
+  margin-top: -20px;
+}
+
+/*form > div > label {
+  position: absolute;
+  margin-top: -20px;
+}
+
+form.go-up input:focus {
+  /*padding: 0px 6px 20px 6px;
+}
+
+form.go-up input:focus + label {
+  background-color: red;
+  margin-top: -36px;
+  top: 100%;
+  z-index: 10;
+}
+
+form.go- input:valid {
+  background: white;
+}*/

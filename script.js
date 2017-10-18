@@ -2,22 +2,24 @@
 // few hours and should be refactored
 
 function expand(d) {
-  d.style.height = '300%';
-  d.style.width = '104%';
-  d.style.left = "-40px";
-  d.style.border = "1px solid #e0e3e8";
-  d.style.padding = '1em 1em 4em 1em';
-  d.style.boxShadow = "0 -1px 8px 0 rgba(115, 114, 114, 0.39)";
-  d.style.borderRadius = "4px";
+  // d.style.height = '300%';
+  // d.style.width = '104%';
+  // d.style.left = "-40px";
+  // d.style.border = "1px solid #e0e3e8";
+  // d.style.padding = '1em 1em 4em 1em';
+  // d.style.boxShadow = "0 -1px 8px 0 rgba(115, 114, 114, 0.39)";
+  // d.style.borderRadius = "4px";
+  d.classList.add('expanded');
 }
 
 function contract(d) {
-  d.style.height = '100%';
-  d.style.width = '500px';
-  d.style.left = "0px";
-  d.style.border = "none";
-  d.style.padding = "0em .25em 1.5em .25em";
-  d.style.boxShadow = "none";
+  // d.style.height = '100%';
+  // d.style.width = '500px';
+  // d.style.left = "0px";
+  // d.style.border = "none";
+  // d.style.padding = "0em .25em 1.5em .25em";
+  // d.style.boxShadow = "none";
+  d.classList.remove('expanded');
 }
 
 window.addEventListener('click', function(e){
